@@ -1,0 +1,13 @@
+menu:
+  home: /
+  archive: /archives
+
+excerpt_link: Read More
+
+fancybox: true
+
+comment:
+  enable: true
+  disqus_shortname: blogbudiharsoinfo
+
+google_analytics: UA-47454066-1
