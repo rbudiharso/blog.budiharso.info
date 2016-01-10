@@ -4,7 +4,6 @@ tags:
 - Javascript
 - Programming
 ---
-<!-- more -->
 [Cabin.js](//www.cabinjs.com) adalah sebuah generator situs statik yang dibuat dengan JavaScript dan dijalankan diatas [node.js](//nodejs.org).
 <!-- more -->
 ## Instalasi

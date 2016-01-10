@@ -4,7 +4,7 @@ tags:
 - Javascript
 - Programming
 ---
-<!-- more -->
+
 Jika kita membuat suatu `function` di JavaScript, kita bisa memanggil `function` tersebut dengan atau tanpa keyword `new`, apa bedanya?
 
 <!-- more -->

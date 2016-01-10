@@ -8,8 +8,9 @@ tags:
 _This is a migrated post from my old blog that sadly I have to take down_
 
 I like [Schnitzelpress](http://schnitzelpress.org/), but just like any other application I use, I'm not happy with just the defaults that come with it. I wan't to tweak it to my liking.
-<!-- more -->
 In case of Schnitzelpress, I wan't to be able to add custom routes without having to fork and modify Schnitzelpress itself, so I set up for a little monkey patching. What I thought as a simple hack turns out to be a bit tricky.
+
+<!-- more -->
 
 ## Problem?
 The problem is, Schnitzelpress has a catch all route defined at the very bottom of its routes stack, and because [sinatra](http://sinatrarb.com) (Schnitzelpress is based on sinatra) is matching its routes in order they are defined, when I add additional route either through module or extension, the added path will be added after the catch all route, thus whenever the custom routes is accessed through web browser, you'll get a 404.

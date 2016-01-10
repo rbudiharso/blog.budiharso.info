@@ -5,7 +5,6 @@ tags:
 - Backbone.js
 - Programming
 ---
-<!-- more -->
 _Lihat demonya [disini](http://demo.budiharso.info/backbone-bootstrap-popup/) atau download kode sumbernya di [Github](https://github.com/rbudiharso/backbone-bootstrap-popup)_
 
 Disuatu proyek yang saya kerjakan, kami menggunakan Bootstrap untuk CSS framework dan Backbone. Dan ada kebutuhan untuk membuat popup window untuk form atau sekedar dialog biasa.

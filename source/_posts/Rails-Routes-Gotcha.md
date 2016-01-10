@@ -4,10 +4,8 @@ tags:
 - Ruby on Rails
 - Programming
 ---
-<!-- more -->
 Sekian lama bekerja dengan [Rails](http://rubyonrails.org) saya masih menemukan beberapa hal yang cukup mengejutkan.
 
-<!-- more -->
 ## Rails routes
 
 Di file `config/routes.rb` bukan hal yang aneh kalo kita membuat route tambahan selain RESTFul routes yang di hasilkan oleh generator rails.
@@ -19,6 +17,7 @@ Rails::Application.routes.draw do
   end
 end
 ```
+<!-- more -->
 
 Hasil dari routes diatas selain 7 rute REST standar rails juga akan menghasilkan satu rute tambahan dengan path seperti ini:
 

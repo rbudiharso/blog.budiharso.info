@@ -4,7 +4,6 @@ tags:
 - Ruby on Rails
 - Programming
 ---
-<!-- more -->
 Membuat file PDF dari html dengan wkhtmltopdf memang susah - susah gampang. Gampang karena dengan gem wicked\_pdf dan wkhtmltopdf kita tinggal membuat template html untuk dijadikan file PDF. Susah karena agak sedikit _tricky_ untuk memilih binary wkhtmltopdf yang sesuai.
 <!-- more -->
 

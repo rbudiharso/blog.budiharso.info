@@ -4,7 +4,6 @@ tags:
 - Vacation
 - Random
 ---
-<!-- more -->
 Perjalanan wisata saya bersama istri, anak saya Rakha si gembul dan neneknya ke kota batik Pekalongan dimulai dengan keberangkatan sekitar pukul 22:00 WIB dari kediaman di Gunung Sindur, Bogor, perjalanan menggunakan mobil dengan rencana melalui jalur pantura.
 
 <!-- more -->

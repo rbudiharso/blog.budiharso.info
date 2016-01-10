@@ -7,9 +7,11 @@ tags:
 ---
 I love [express](http://expressjs.com/)'s middleware concept, it makes splitting application functionality into small modules and composing them in the routes very easy. But when you want to combine those middlewares into one easy to use function, how do you do it?
 
+<!-- more -->
+
 I face this issue before, but with [connect](https://www.npmjs.com/package/connect) you can do just this.  Imagine you have this kind of middlewares in your express route:
 
-```javascript route.js
+```JS
 var express = require('express');
 var router = express.Router();
 
@@ -48,7 +50,7 @@ this:
 
 you can combine those middlewares into this:
 
-```javascript route.js
+```JS
 var express = require('express');
 var router = express.Router();
 var connect = require('connect'); // we require connect
@@ -82,5 +84,4 @@ router.get(
 module.exports = router;
 ```
 
-You can do this for any combination of middlewares, and reuse those
-combination on any route in your express app.
+You can do this for any combination of middlewares, and reuse those combination on any route in your express app.

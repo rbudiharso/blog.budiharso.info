@@ -6,7 +6,6 @@ tags:
 - Backbone.js
 - Programming
 ---
-<!-- more -->
 Saya mendapati masalah ini ketika saya bermaksud mengganti nilai attribute dari sebuah backbone model tapi event `change` tidak terpicu.  Setelah mencari - cari ternyata solusinya sangat sederhana.
 <!-- more -->
 ## Event 'change'

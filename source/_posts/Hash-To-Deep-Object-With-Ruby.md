@@ -6,7 +6,7 @@ tags:
 ---
 _This is a migration from my old blog post which sadly I have to take
 down._
-<!-- more -->
+
 I find that I need this quite often, say if I have a hash like this:
 
 ``` ruby
