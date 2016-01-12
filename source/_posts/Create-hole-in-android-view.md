@@ -11,10 +11,16 @@ And the search goes on and on, up to the point where I promise myself that if I 
 
 Basically what I end up doing is extending a [ViewGroup](http://developer.android.com/reference/android/view/ViewGroup.html) and override the [onDraw](http://developer.android.com/reference/android/view/View.html#onDraw%28android.graphics.Canvas%29) method to draw a clearing to create a *"hole"*. A code snippet worth a thousand words.
 
-{% include_code lang:java android-view-hole/MyActivity.java %}
+{% include_code lang:java android-view-hole/MainActivity.java %}
 
 {% include_code lang:java android-view-hole/CameraView.java %}
 
+And this is the meat of the viewport, this is the class draw the "hole" on the view.
+ 
 {% include_code lang:java android-view-hole/Viewport.java %}
 
-{% include_code lang:xml android-view-hole/my_activity.xml %}
+{% include_code lang:xml android-view-hole/activity_main.xml %}
+
+And this is the result running on an android emulator:
+
+{% asset_img viewport.png %}

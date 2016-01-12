@@ -1,29 +1,24 @@
-package com.myapp;
+package com.myapp.viewport;
 
 import android.hardware.Camera;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import com.myapp.R;
-import com.myapp.Viewport;
-import com.myapp.CameraView;
-
-public class MyActivity extends AppCompatActivity {
-
-    private FrameLayout preview1;
+public class MainActivity extends AppCompatActivity {
+    private FrameLayout preview;
     private Camera mCamera;
-
-    private CameraView cameraPreview1;
+    private CameraView cameraView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_activity);
+        setContentView(R.layout.activity_main);
 
         mCamera = getCameraInstance();
-        preview1 = (FrameLayout) findViewById(R.id.preview1);
-        cameraPreview1 = new CameraView(this, mCamera);
-        preview1.addView(cameraPreview1);
+        preview = (FrameLayout) findViewById(R.id.preview1);
+        cameraView = new CameraView(this, mCamera);
+        preview.addView(cameraView);
 
         mCamera.startPreview();
     }

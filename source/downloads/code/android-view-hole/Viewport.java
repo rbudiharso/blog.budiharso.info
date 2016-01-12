@@ -1,4 +1,4 @@
-package com.myapp.fragment;
+package com.myapp.viewport;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -37,13 +37,25 @@ public class Viewport extends ViewGroup {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-        Paint paint = new Paint();
-        paint.setAntiAlias(true);
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        float w = (float) getWidth() / 4;
-        float h =  (float) getHeight() / 4;
-        canvas.drawRect(w, h, w*3, h*3, paint);
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
+        int viewportMargin = 32;
+        int viewportCornerRadius = 8;
+        Paint eraser = new Paint();
+        eraser.setAntiAlias(true);
+        eraser.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+        float width = (float) getWidth() - viewportMargin;
+        float height =  width * (float) 0.7;
+        RectF rect = new RectF((float)viewportMargin, (float)viewportMargin, width, height);
+        RectF frame = new RectF((float)viewportMargin-2, (float)viewportMargin-2, width+4, height+4);
+        Path path = new Path();
+        Paint stroke = new Paint();
+        stroke.setAntiAlias(true);
+        stroke.setStrokeWidth(4);
+        stroke.setColor(Color.WHITE);
+        stroke.setStyle(Paint.Style.STROKE);
+        path.addRoundRect(frame, (float) viewportCornerRadius, (float) viewportCornerRadius, Path.Direction.CW);
+        canvas.drawPath(path, stroke);
+        canvas.drawRoundRect(rect, (float) viewportCornerRadius, (float) viewportCornerRadius, eraser);
     }
 }

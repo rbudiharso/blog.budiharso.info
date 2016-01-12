@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.co.giftcard.thankyouapp.activity.Temp">
+    tools:context="com.myapp.viewport.MainActivity">
 
     <FrameLayout
         android:id="@+id/preview1"
@@ -15,25 +15,12 @@
         android:layout_height="match_parent">
     </FrameLayout>
 
-    <LinearLayout
+    <!-- use the view to get the viewport -->
+    <com.myapp.viewport.Viewport
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".5">
-
-        </FrameLayout>
-
-        <id.co.giftcard.thankyouapp.fragment.Viewport
-            android:id="@+id/preview2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".5"
-            android:background="@color/transparent_gray">
-        </id.co.giftcard.thankyouapp.fragment.Viewport>
-
-    </LinearLayout>
+        android:layout_weight=".5"
+        android:background="#7f000000">
+    </com.myapp.viewport.Viewport>
 
 </FrameLayout>
