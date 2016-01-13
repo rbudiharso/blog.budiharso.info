@@ -74,3 +74,4 @@ deploy:
   pass: 'MTrO!$r?y^*u'
   port: 21
   verbose: true
+  ignore: ['.htaccess']
