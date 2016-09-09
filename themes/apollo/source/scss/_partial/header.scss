@@ -3,8 +3,12 @@ header {
 
     .logo-link {
         float: left;
+
+        h1 {
+          line-height: .6em
+        }
     }
-    
+
     .nav {
         float: right;
         left: 80px;
