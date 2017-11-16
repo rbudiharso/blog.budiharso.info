@@ -1,9 +1,20 @@
+::selection {
+    color: #FFFFFF;
+    background-color: #42b983;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     margin: 0;
     color: #34495e;
     font-size: 15px;
     line-height: 1.6;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
 }
 
 ul.nav,
@@ -11,6 +22,10 @@ ul.post-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+ul {
+    margin: 1rem 0;
 }
 
 a, a:active {
@@ -36,12 +51,20 @@ code {
     white-space: inherit;
 }
 
+iframe, video {
+    max-width: 100%;
+    margin: 1rem auto;
+    display: block;
+}
+
 table {
     width: 100%;
+    margin: 1em auto;
     thead {
         background-color: #ddd;
         th {
             padding: 5px;
+            min-width: 20px;
         }
     }
     tbody {
@@ -50,6 +73,7 @@ table {
         }
         td {
             padding: 5px;
+            vertical-align: text-top;
         }
     }
 }

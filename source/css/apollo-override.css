@@ -1,0 +1,9 @@
+header {
+  padding: 20px 10px;
+}
+header > a > h1 {
+  line-height: .6em;
+}
+main.container {
+  margin: 2em 10px;
+}

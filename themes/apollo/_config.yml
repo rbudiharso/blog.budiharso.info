@@ -7,8 +7,13 @@ menu:
 favicon: /favicon.png
 logo: /favicon.png
 
-# comment
+# Comment
+# e.g disqus: seansun
 disqus: blogbudiharsoinfo
 
+# Analytics
 # google-analytics:
 ga: UA-47454066-1
+
+# Copyright Infomation
+startyear: 2012
