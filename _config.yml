@@ -12,7 +12,7 @@ timezone: Asia/Jakarta
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.budiharso.info
+url: https://blog.budiharso.info
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -31,7 +31,10 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: []
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -40,8 +43,15 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
-  tab_replace:
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Category & Tag
 default_category: uncategorized
@@ -66,12 +76,6 @@ pagination_dir: page
 theme: apollo
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: ftpsync
-  host: ftp.budiharso.info
-  user: blog@budiharso.info
-  pass: 'MTrO!$r?y^*u'
-  port: 21
-  verbose: true
-  ignore: ['.htaccess']
+## Using Cloudflare Pages - no deploy config needed here
+## Build command: npm run build
+## Output directory: public
