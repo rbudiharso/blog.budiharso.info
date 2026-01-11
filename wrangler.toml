@@ -1,6 +1,3 @@
 name = "blog-budiharso-info"
 compatibility_date = "2025-01-11"
 pages_build_output_dir = "public"
-
-[build]
-command = "npm run build"
